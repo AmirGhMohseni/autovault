@@ -1,0 +1,19 @@
+{
+  "name": "autovault-agent",
+  "version": "0.1.0",
+  "description": "Off-chain AI agent service for AutoVault: monitors markets, compiles/optimizes target portfolio weights, signs EIP-712 rebalance intents, and submits them via a keeper to AgentExecutor.sol",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/orchestrator.ts",
+    "dev": "tsx watch src/orchestrator.ts"
+  },
+  "dependencies": {
+    "viem": "^2.21.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.5.0"
+  }
+}
